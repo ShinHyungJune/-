@@ -1,0 +1,77 @@
+/* effect */
+.box-shadow {box-shadow:0px 3px 6px rgba(0,0,0,0.16);}
+
+/* color */
+.primary {color:#6FDDFE;}
+.accent {color:#D78E71;}
+.white {color:#fff;}
+
+.bg-primary {background-color:#6FDDFE;}
+.bg-accent {background-color:#D78E71;}
+
+/* layout */
+.clearfix:after {display:block; content:""; clear:both;}
+.float {float:left;}
+.float.right {float:right;}
+.width-49 {width:49%;}
+.wrap-300 {width:300px; margin:0 auto;}
+
+/* fonts */
+.font16 {font-size:16px;}
+.font1 {font-size:14px;}
+
+.bold {font-weight:bold;}
+.medium {font-weight:500;}
+.regular {font-weight:400;}
+.light {font-weight:200;}
+
+/* buttons */
+.btn-text {padding:8px 15px; font-weight:500; color:#fff; box-shadow:0px 3px 6px rgba(0,0,0,0.16); transition:box-shadow .3s; }
+.btn-text:hover {box-shadow:3px 6px 10px rgba(0,0,0,0.16);}
+.btn-full {display:block; width:100%;}
+
+/* input */
+.error {margin-top:5px; text-align:left; font-size:12px; color:red;}
+.notice {margin-top:5px; text-align:left; font-size:12px;}
+.input-text {}
+.input-text input {width:100%; padding:7px 15px; border-bottom:1px solid #e1e1e1;}
+
+.input-img {margin-top:20px; margin-bottom:20px; text-align:center; transition:transform .3s;}
+.input-img:hover {transform:scale(1.1);}
+.input-img label {display:inline-block; cursor:pointer;}
+.input-img input {display:none;}
+.input-img .box_img img {display:block; width:100%;}
+
+/* components */
+.flash-box {width:100%; height:100%; position:fixed; top:0; left:0; z-index:10;}
+.flash-box#check {background-color:rgba(0,0,0,0.7);}
+.flash-content {width:300px; position:fixed; top:40%; left:50%; transform:translate(-50%, -50%); text-align:center; box-shadow:4px 10px 6px rgba(0,0,0,0.16);}
+.flash-text {padding:10px;  color:#fff;}
+.flash-button {display:block; width:100%; padding:10px; border-top:1px solid #fff; color:#fff;}
+
+
+/* common pages */
+#login {position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); text-align:center;}
+#login .input-text {margin-top:35px;}
+#login .logo {display:inline-block;}
+#login .utils {margin-top:5px; margin-bottom:30px; text-align:right;}
+#login .btn-text {width:100%;}
+
+#register {margin-top:100px; margin-bottom:60px; text-align:center;}
+#register .btn-text {margin-top:30px;}
+#register .input-text {margin-bottom:30px;}
+#register .input-text input.white {color:white !important;}
+
+#sendResetPasswordMail {position:absolute; top:48%; left:50%; transform:translate(-50%, -50%); text-align:center;}
+#sendResetPasswordMail .logo {display:inline-block;}
+#sendResetPasswordMail .input-text {margin-bottom:30px; }
+
+#resetPassword {position:absolute; top:48%; left:50%; transform:translate(-50%, -50%); text-align:center;}
+#resetPassword .logo {display:inline-block;}
+#resetPassword .input-text {margin-bottom:30px; }
+
+@media screen and (max-width:500px){
+    .wrap-1200 {width:100%; padding:0 20px;}
+    .wrap-300 {width:100%;}
+    #login {width:100%; padding:0 20px;}
+}
